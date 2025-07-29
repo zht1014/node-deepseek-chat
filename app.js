@@ -6,7 +6,7 @@ import chatRouter from './routes/chat.js';
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3008;
 
 // ✅ 允许跨域请求
 app.use(cors());
