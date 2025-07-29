@@ -1,7 +1,7 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
-import chatRouter from './routes/chat.js';
+import chatRouter from './api/chat.js';
 
 dotenv.config();
 
@@ -20,3 +20,5 @@ app.use('/api/chat', chatRouter);
 app.listen(port, () => {
   console.log(`✅ Server running at http://localhost:${port}`);
 });
+
+export default app;
